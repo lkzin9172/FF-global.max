@@ -1,153 +1,75 @@
 {
-  "shield_status_dashboard": {
-    "name": "Global_Security_Shard",
-    "region": "BR_North",
-    "server_node": "US-East-1",
-    "uptime_percentage": 99.99,
-    "last_sync": "2023-10-27T12:05:00Z"
-  },
-  "real_time_protection_metrics": {
-    "packets_analyzed_per_second": 1500,
-    "classes_monitored": 450,
-    "blacklist_hits_blocked": 12450,
-    "ban_attempts_fooled": 890,
-    "current_threat_level": "low",
-    "encryption_strength": "military_grade"
-  },
-  "active_shields": [
-    {
-      "shield_id": "SH_001_ALPHA",
-      "target": "UIDrawShopUnlimitedTokenTowerContentController",
-      "status": "guarding",
-      "hits_today": 342,
-      "method": "data_injection_mask",
-      "confidence_score": 0.99
-    },
-    {
-      "shield_id": "SH_002_BETA",
-      "target": "proto.ExchangedAward",
-      "status": "guarding",
-      "hits_today": 1205,
-      "method": "hash_obfuscation",
-      "confidence_score": 0.98
-    },
-    {
-      "shield_id": "SH_003_GAMMA",
-      "target": "COW.UIDrawShopContentBaseController",
-      "status": "monitoring",
-      "hits_today": 56,
-      "method": "hook_interception",
-      "confidence_score": 0.95
-    },
-    {
-      "shield_id": "SH_004_DELTA",
-      "target": "Assembly-CSharp-patch.bytes",
-      "status": "locked",
-      "hits_today": 8900,
-      "method": "full_file_integrity",
-      "confidence_score": 1.0
-    },
-    {
-      "shield_id": "SH_005_EPSILON",
-      "target": "libil2cpp.so",
-      "status": "guarding",
-      "hits_today": 2100,
-      "method": "symbol_naming_randomization",
-      "confidence_score": 0.97
-    }
-  ],
-  "blacklist_fortress": {
-    "mode": "aggressive_fooling",
-    "known_blacklist_signatures": [
-      "0x1A2B3C4D",
-      "0x5E6F7G8H",
-      "0x9I0J1K2L",
-      "0x3M4N5O6P",
-      "0x7Q8R9S0T"
-    ],
-    "countermeasures": [
-      "signature_rewriting",
-      "dummy_class_creation",
-      "traffic_spamming",
-      "fake_update_simulation"
-    ],
-    "success_rate_last_24h": "99.9%"
-  },
-  "ban_prevention_system": {
-    "hardware_id_lock": true,
-    "device_fingerprint_stable": true,
-    "ip_rotation_enabled": false,
-    "account_warmup_active": true,
-    "play_pattern_humanized": true,
-    "anti_cheat_detection_delay_ms": 500,
-    "false_positive_rate": "0.01%"
-  },
-  "remote_connection_details": {
-    "github_repo_url": "https://github.com/your-repo/bypass-data",
-    "api_endpoint": "https://api.yourdomain.com/v1/shield/status",
-    "heartbeat_interval_s": 30,
-    "last_heartbeat": "2023-10-27T12:05:30Z",
-    "connection_status": "stable",
-    "latency_ms": 45
-  },
-  "security_patches_queue": [
-    {
-      "patch_id": "P_2023_10_27_A",
-      "description": "Fix for new Garena scan in UIDrawShop",
-      "applied": true,
-      "timestamp": "2023-10-27T10:00:00Z"
-    },
-    {
-      "patch_id": "P_2023_10_27_B",
-      "description": "Update blacklist signatures",
-      "applied": true,
-      "timestamp": "2023-10-27T11:30:00Z"
-    },
-    {
-      "patch_id": "P_2023_10_27_C",
-      "description": "Enhance Assembly-CSharp protection",
-      "applied": true,
-      "timestamp": "2023-10-27T12:00:00Z"
-    }
-  ],
-  "performance_impact": {
-    "cpu_usage_increase_percent": 2.5,
-    "ram_usage_increase_mb": 15,
-    "battery_drain_impact": "minimal",
-    "game_fps_drop": "0"
-  },
-  "audit_log_recent": [
-    {
-      "time": "12:04:55",
-      "event": "Blacklist signature detected and masked",
-      "severity": "info"
-    },
-    {
-      "time": "12:04:50",
-      "event": "Integrity check passed for patch.bytes",
-      "severity": "info"
-    },
-    {
-      "time": "12:04:45",
-      "event": "Remote heartbeat sent successfully",
-      "severity": "info"
-    },
-    {
-      "time": "12:04:40",
-      "event": "Shield SH_002 updated class data",
-      "severity": "warning"
-    }
-  ],
-  "configuration_overrides": {
-    "force_clean_report": true,
-    "hide_modded_files_from_scan": true,
-    "simulate_stock_behavior": true,
-    "disable_garena_debug_logs": true
-  },
-  "final_verification": {
-    "is_safe": true,
-    "is_whitelisted": true,
-    "garena_approval_code": "G-FINAL-APPROVED-99",
-    "next_review": "2023-10-28T12:00:00Z"
-  }
+  "remote_id": "garena_shield_v2",
+  "status": "online",
+  "blacklist_protection": true,
+  "blocked_hosts": [
+    { "host": "gin.freefireind.in", "enabled": true },
+    { "host": "gin.freefiremobile.com", "enabled": true },
+    { "host": "com.multiaccounts.cloneapps", "enabled": true },
+    { "host": "com.dts.freefiremax", "enabled": true },
+    { "host": "garena.co.id", "enabled": true },
+    { "host": "na.gin.freefiremobile.com", "enabled": true },
+    { "host": "gamesecurity.us.freefiremobile.com", "enabled": true },
+    { "host": "hotro.ff.garena.vn", "enabled": true },
+    { "host": "com.dts.freefireth", "enabled": true },
+    { "host": "anticheat.garena.vn", "enabled": true },
+    { "host": "anticheat.garena.com", "enabled": true },
+    { "host": "ff.garena.com", "enabled": true },
+    { "host": "conversions.appsflyer.com", "enabled": true },
+    { "host": "ff.member.garena.com", "enabled": true },
+    { "host": "ft.contact.garena.com", "enabled": true },
+    { "host": "contact.garena.com", "enabled": true },
+    { "host": "dl.dir.freefiremobile.com", "enabled": true },
+    { "host": "ffquid.garena.com", "enabled": true },
+    { "host": "cheatandroidios.co", "enabled": true },
+    { "host": "cheatandroidios.garena.co", "enabled": true },
+    { "host": "sg.gin.freefiremobile.com", "enabled": true },
+    { "host": "br.gin.freefiremobile.com", "enabled": true },
+    { "host": "id.gin.freefiremobile.com", "enabled": true },
+    { "host": "vn.gin.freefiremobile.com", "enabled": true },
+    { "host": "eu.gin.freefiremobile.com", "enabled": true },
+    { "host": "latam.gin.freefiremobile.com", "enabled": true },
+    { "host": "in.gin.freefiremobile.com", "enabled": true },
+    { "host": "pk.gin.freefiremobile.com", "enabled": true },
+    { "host": "th.gin.freefiremobile.com", "enabled": true },
+    { "host": "my.gin.freefiremobile.com", "enabled": true },
+    { "host": "ph.gin.freefiremobile.com", "enabled": true },
+    { "host": "tw.gin.freefiremobile.com", "enabled": true },
+    { "host": "us.gin.freefiremobile.com", "enabled": true },
+    { "host": "me.gin.freefiremobile.com", "enabled": true },
+    { "host": "ru.gin.freefiremobile.com", "enabled": true },
+    { "host": "anticheat.garena.co.id", "enabled": true },
+    { "host": "anticheat.garena.ph", "enabled": true },
+    { "host": "anticheat.garena.sg", "enabled": true },
+    { "host": "anticheat.garena.my", "enabled": true },
+    { "host": "anticheat.garena.th", "enabled": true },
+    { "host": "anticheat.garena.tw", "enabled": true },
+    { "host": "gamesecurity.garena.co.id", "enabled": true },
+    { "host": "gamesecurity.garena.com", "enabled": true },
+    { "host": "gamesecurity.garena.vn", "enabled": true },
+    { "host": "gamesecurity.garena.ph", "enabled": true },
+    { "host": "support.garena.com", "enabled": true },
+    { "host": "cs.garena.com", "enabled": true },
+    { "host": "cs.garena.vn", "enabled": true },
+    { "host": "cs.garena.co.id", "enabled": true },
+    { "host": "cs.garena.ph", "enabled": true },
+    { "host": "analytics.garena.vn", "enabled": true },
+    { "host": "analytics.garena.co.id", "enabled": true },
+    { "host": "analytics.garena.com", "enabled": true },
+    { "host": "analytics.garena.ph", "enabled": true },
+    { "host": "freefiremobile.com", "enabled": true },
+    { "host": "garena.com", "enabled": true },
+    { "host": "garena.vn", "enabled": true },
+    { "host": "garena.ph", "enabled": true },
+    { "host": "garena.sg", "enabled": true },
+    { "host": "garena.tw", "enabled": true },
+    { "host": "garena.th", "enabled": true },
+    { "host": "garena.my", "enabled": true },
+    { "host": "garena.co", "enabled": true },
+    { "host": "garena.co.id", "enabled": true },
+    { "host": "garena.in", "enabled": true },
+    { "host": "garena.live", "enabled": true },
+    { "host": "gin.freefiremobile.com", "enabled": true },
+    { "host": "dl.freefiremobile.com", "enabled": true }
+  ]
 }
