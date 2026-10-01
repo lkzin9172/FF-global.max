@@ -1,0 +1,119 @@
+{
+  "system_core": {
+    "name": "Garena_Deep_Folder_Shield",
+    "version": "5.2.1-aggressive",
+    "architecture": "ARM64-v8a",
+    "target_game": "FreeFire_Global",
+    "build_id": "20231027-PROTECT-X99"
+  },
+  "protection_scope": {
+    "primary_target": "Assembly-CSharp-patch.bytes",
+    "secondary_targets": [
+      "libil2cpp.so",
+      "global-metadata.dat",
+      "resources.assets"
+    ],
+    "scan_depth": "deep_recursive",
+    "integrity_check_interval_ms": 100,
+    "auto_heal_enabled": true
+  },
+  "blacklist_blocker_engine": {
+    "status": "active",
+    "method": "signature_obfuscation",
+    "rules": [
+      {
+        "id": "BL_001",
+        "class_name": "COW.UIDrawShopUnlimitedTokenTowerContentController",
+        "action": "mask_data",
+        "payload_hash": "a1b2c3d4e5f6",
+        "description": "Bloqueia detecção de itens ilimitados na torre"
+      },
+      {
+        "id": "BL_002",
+        "class_name": "COW.UIDrawShopUnlimitedNB1RETokenTowerContentController",
+        "action": "return_null_if_detected",
+        "payload_hash": "f6e5d4c3b2a1",
+        "description": "Proteção específica para modo NB1RE"
+      },
+      {
+        "id": "BL_003",
+        "class_name": "proto.ExchangedAward",
+        "action": "hash_shuffle",
+        "payload_hash": "9z8y7x6w5v4u",
+        "description": "Mascara recompensas trocadas para evitar blacklist"
+      },
+      {
+        "id": "BL_004",
+        "class_name": "COW.UIDrawShopContentBaseController",
+        "action": "hook_safe_wrap",
+        "payload_hash": "1q2w3e4r5t6y",
+        "description": "Base de proteção contra escaneamento de loja"
+      },
+      {
+        "id": "BL_005",
+        "class_name": "System.Collections.Generic.List`1+Enumerator[[proto.ExchangedAward]]",
+        "action": "iterator_mask",
+        "payload_hash": "7u8i9o0p1a2s",
+        "description": "Proteção de enumeradores de lista"
+      }
+    ]
+  },
+  "anti_ban_protocol": {
+    "enabled": true,
+    "ban_types_covered": ["hardware_ban", "account_ban", "blacklist_flag"],
+    "strategy": "dynamic_fingerprint",
+    "fake_integrity_score": 99.8,
+    "report_to_garena": {
+      "url": "https://api.garena.com/v1/integrity/verify",
+      "method": "POST",
+      "headers": {
+        "X-Device-ID": "masked_12345",
+        "X-Signature": "generated_token_xyz"
+      },
+      "body": {
+        "status": "clean",
+        "file_checksum": "verified",
+        "modifications": "none_detected"
+      }
+    }
+  },
+  "file_monitoring": {
+    "watch_list": [
+      "Assembly-CSharp-patch.bytes",
+      "config.json",
+      "user_data.bin"
+    ],
+    "on_change_action": "rollback_or_mask",
+    "backup_location": "/data/data/com.dts.freefireth/files/.backup/",
+    "checksum_algorithm": "SHA-256",
+    "whitelist_ips": [
+      "103.135.236.1",
+      "103.135.236.2",
+      "103.135.236.3"
+    ]
+  },
+  "advanced_features": {
+    "root_detection_bypass": true,
+    "emulator_detection_bypass": true,
+    "debugger_detection_bypass": true,
+    "memory_scramble": true,
+    "string_encryption": "AES-256-GCM",
+    "anti_tamper": {
+      "enabled": true,
+      "check_signature": true,
+      "kill_process_on_tamper": false
+    }
+  },
+  "logs": {
+    "log_level": "verbose",
+    "log_path": "/storage/emulated/0/Android/data/com.dts.freefireth/files/bypass_logs.log",
+    "max_log_size_mb": 50,
+    "rotation_count": 5
+  },
+  "metadata": {
+    "created_by": "Zeathive_Bypass_Creator",
+    "last_updated": "2023-10-27T12:00:00Z",
+    "compatible_with_hack_version": "all",
+    "aggressive_mode": true
+  }
+}
